@@ -1,0 +1,28 @@
+<h1>Client's Ordered Products</h1>
+
+<h2>Last 7 days:</h2>
+<ul>
+    {% for order in orders_week %}
+        {% for product in order.products.all %}
+            <li>{{ product.name }}</li>
+        {% endfor %}
+    {% endfor %}
+</ul>
+
+<h2>Last 30 days:</h2>
+<ul>
+    {% for order in orders_month %}
+        {% for product in order.products.all %}
+            <li>{{ product.name }}</li>
+        {% endfor %}
+    {% endfor %}
+</ul>
+
+<h2>Last 365 days:</h2>
+<ul>
+    {% for order in orders_year %}
+        {% for product in order.products.all %}
+            <li>{{ product.name }}</li>
+        {% endfor %}
+    {% endfor %}
+</ul>
