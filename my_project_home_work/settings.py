@@ -27,7 +27,7 @@ CSRF_COOKIE_SECURE = True
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'radik2008.pythonanywhere.com',
+    'radik2000.pythonanywhere.com',
 ]
 
 # Application definition
@@ -82,17 +82,16 @@ WSGI_APPLICATION = 'my_project_home_work.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'radik2008$default',
-        'USER': 'radik2008',
+        'NAME': 'radik2000$default',
+        'USER': 'radik2000',
         'PASSWORD': os.getenv('MYSQL_PASSWORD'),
-        'HOST': 'radik2008.mysql.pythonanywhere-services.com',
+        'HOST': 'radik2000.mysql.pythonanywhere-services.com',
         'OPTIONS': {
             'init_command': "SET NAMES 'utf8mb4';SET sql_mode = 'STRICT_TRANS_TABLES'",
             'charset': 'utf8mb4',
         },
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators

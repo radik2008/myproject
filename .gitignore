@@ -3,3 +3,6 @@
 *.sqlite3
 *.log
 *.pyc
+
+echo "export MYSQL_PASSWORD=A571ema571em" >> .env
+echo 'set -a; source ~/My_project/.env; set +a' >> ~/.virtualenvs/virtualenv/bin/postactivate
